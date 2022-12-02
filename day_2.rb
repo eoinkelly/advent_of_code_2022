@@ -43,14 +43,14 @@ desired_outcome_scores = {
 
 raw_data = File.readlines("day_2_part_1_input.txt", chomp: true)
 
-part_1_answer = raw_data.map do |line|
+part_1_answer = raw_data.sum do |line|
   their_play, my_play = line.split(/\s+/)
   my_play_scores.fetch(my_play) + outcome_scores.fetch([their_play, my_play])
-end.sum
+end
 
 puts "Part 1: #{part_1_answer}"
 
-part_2_answer = raw_data.map do |line|
+part_2_answer = raw_data.sum do |line|
   their_play, desired_outcome = line.split(/\s+/)
 
   my_play = case desired_outcome
@@ -63,6 +63,6 @@ part_2_answer = raw_data.map do |line|
             end
 
   my_play_scores.fetch(my_play) + desired_outcome_scores.fetch(desired_outcome)
-end.sum
+end
 
 puts "Part 2: #{part_2_answer}"

@@ -14,7 +14,7 @@ def priority_for(char)
   PRIORITIES.index(char)
 end
 
-raw_data = File.readlines("day_3_part_1_input.txt", chomp: true)
+raw_data = File.readlines("../inputs/day_3_part_1_input.txt", chomp: true)
 
 part_1_answer = raw_data.sum do |line|
   middle_idx = line.length / 2

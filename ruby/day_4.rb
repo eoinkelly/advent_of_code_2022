@@ -10,7 +10,7 @@ _raw_example_data = <<~EO_DATA
 EO_DATA
 _example_data = example_data.lines(chomp: true)
 
-raw_data = File.readlines("day_4_part_1_input.txt", chomp: true)
+raw_data = File.readlines("../inputs/day_4_part_1_input.txt", chomp: true)
 
 input_as_ranges = raw_data.map do |line|
   left, right = line.split(",")

@@ -41,7 +41,7 @@ desired_outcome_scores = {
   "Z" => 6 # win
 }
 
-raw_data = File.readlines("day_2_part_1_input.txt", chomp: true)
+raw_data = File.readlines("../inputs/day_2_part_1_input.txt", chomp: true)
 
 part_1_answer = raw_data.sum do |line|
   their_play, my_play = line.split(/\s+/)

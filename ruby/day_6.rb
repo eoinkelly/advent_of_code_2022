@@ -10,10 +10,10 @@ end
 # puts "Part 2: #{find_end_of_first_window(part_1_ex_1, window_size: 4)}"
 # puts "Part 2: #{find_end_of_first_window(part_1_ex_2, window_size: 4)}"
 
-puts "Part 1: #{find_end_of_first_window(File.read("day_6_input.txt", chomp: true), window_size: 4)}"
+puts "Part 1: #{find_end_of_first_window(File.read("../inputs/day_6_input.txt", chomp: true), window_size: 4)}"
 
 # part_2_ex_1 = "mjqjpqmgbljsphdztnvjfqwrcgsmlb"
 # part_2_ex_2 = "bvwbjplbgvbhsrlpgdmjqwftvncz"
 # puts "Part 2: #{find_end_of_first_window(part_2_ex_1, window_size: 14)}"
 # puts "Part 2: #{find_end_of_first_window(part_2_ex_2, window_size: 14)}"
-puts "Part 2: #{find_end_of_first_window(File.read("day_6_input.txt", chomp: true), window_size: 14)}"
+puts "Part 2: #{find_end_of_first_window(File.read("../inputs/day_6_input.txt", chomp: true), window_size: 14)}"

@@ -87,9 +87,9 @@ end
 # moves = Move.moves_from_puzzle_input(raw_example_moves)
 
 # Real puzzle input
-stacks_part_1 = Stack.stacks_from_puzzle_input(File.read("day_5_stacks.txt"))
-stacks_part_2 = Stack.stacks_from_puzzle_input(File.read("day_5_stacks.txt"))
-moves = Move.moves_from_puzzle_input(File.read("day_5_moves.txt"))
+stacks_part_1 = Stack.stacks_from_puzzle_input(File.read("../inputs/day_5_stacks.txt"))
+stacks_part_2 = Stack.stacks_from_puzzle_input(File.read("../inputs/day_5_stacks.txt"))
+moves = Move.moves_from_puzzle_input(File.read("../inputs/day_5_moves.txt"))
 
 def part_1_exec_moves(stacks, moves)
   moves.each do |move|
